@@ -72,7 +72,7 @@ a:hover {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 4px;
 }
 
 .header__theme-button {
@@ -102,13 +102,6 @@ a:hover {
 
 .theme_dark .header__theme-button_is-active::after {
   content: '';
-  position: absolute;
-  left: 5%; 
-  right: 5%;
-  top: 60%;
-  height: 0.4em;
-  background-color: var(--accent-color);
-  z-index: -1;
   background: url('../images/pattern.svg');
 }
 
@@ -160,7 +153,9 @@ a:hover {
 
 .content__list {
   list-style: none;
-  padding-inline-start: 40px;
+  padding-inline-start: 14px;
+  font-size: 18px;
+  line-height: 110%;
 }
 
 .content__list li {
@@ -172,7 +167,7 @@ a:hover {
   content: '';
   position: absolute;
   left: 0;
-  top: 7.5px;
+  top: 10px;
   transform: translateY(-50%);
   width: 15px;
   height: 15px;
@@ -182,12 +177,6 @@ a:hover {
 
 .theme_dark .content__list li::before {
   content: '';
-  position: absolute;
-  left: 0;
-  top: 7.5px;
-  transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
   background: url('../images/marker-dark.svg') no-repeat center;
   background-size: 15px 15px;
 }
@@ -198,6 +187,7 @@ a:hover {
 
 .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
   background-color: var(--accent-color);
+  font-size: 30px;
   padding-left: 4px;
   padding-right: 4px;
   margin-right: 1px;
@@ -206,12 +196,6 @@ a:hover {
 }
 
 .theme_dark .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
-  background-color: var(--accent-color);
-  padding-left: 4px;
-  padding-right: 4px;
-  margin-right: 1px;
-  display: inline-block;
-  font-weight: 700;
   border: 1px solid currentColor;
 }
 
@@ -228,6 +212,7 @@ a:hover {
 
 .content__picture-caption {
   padding-block: 20px;
+  font-size: 18px;
   border-block-end: 1px solid currentColor;
   text-align: center;
 }
@@ -274,13 +259,6 @@ a:hover {
 
 .theme_dark .colored-text::after{
   content: '';
-  position: absolute;
-  left: -1%; 
-  right: -1%;
-  top: 60%;
-  height: 0.25em;
-  background-color: var(--accent-color);
-  z-index: -1;
   background: url('../images/pattern.svg');
 }
 
@@ -294,4 +272,5 @@ footer {
 
 .footer__copyright {
   font-size: 18px;
+  text-transform: uppercase;
 }

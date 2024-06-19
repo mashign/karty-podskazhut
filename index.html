@@ -35,7 +35,8 @@
         <div class="content__text-block content__text-block_type_first-lettered">
             <p class="content__paragraph">Творческие кризисы, кажется, рано или поздно испытывает любой человек. Часто бывает так, что вы сталкиваетесь с проблемой, не можете решить её с первого раза и начинаете думать, что вообще ни на что не способны. Мозг запоминает эту модель поведения, и на следующий день вам не хочется делать вообще ничего — ведь всё равно ничего не получится.
             </p>
-            <p class="content__paragraph">Как выйти из такого застоя? Есть разные варианты, мы поговорим об одном из самых креативных — колоде карт.</p>
+            <p class="content__paragraph">Как выйти из такого застоя? Есть разные варианты, мы поговорим об одном из самых креативных — колоде карт.
+            </p>
         </div>
       <h2 class="heading content__title">Что это за колода</h2>
         <div class="content__text-block content__text-block_type_first-lettered">
@@ -43,7 +44,7 @@
             </p>
         </div>
         <figure class="content__figure">
-          <picture class="content__picture">
+          <picture>
             <source 
               srcset="
                 ./images/cards-1x.avif 1x,
@@ -56,14 +57,13 @@
                 ./images/cards-2x.webp 2x
               " 
               type="image/webp">
-            <img 
-              src="./images/cards-1x.png"   
+            <img  class="content__picture" src="./images/cards-1x.png"   
               srcset="
                ./images/cards-1x.png 1x,
-               ./images/cards-2x.png 2x
-              " 
+               ./images/cards-2x.png 2x" 
               loading="lazy"
-              alt="Колода Oblique Strategies">
+              alt="Колода Oblique Strategies"
+            >
           </picture>
           <figcaption class="content__picture-caption">
             Колода Oblique Strategies
@@ -99,7 +99,7 @@
           </ul>
     </main>
     <footer class="footer">
-      <p class="footer__copyright">VЁRSTKA</p>
+      <p class="footer__copyright">vёrstka</p>
     </footer>
     <script src="./scripts/theme-changer.js"></script>
   </body>
