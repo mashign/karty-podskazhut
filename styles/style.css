@@ -73,6 +73,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 4px;
+  padding-inline: 0;
 }
 
 .header__theme-button {
@@ -101,7 +102,6 @@ a:hover {
 } 
 
 .theme_dark .header__theme-button_is-active::after {
-  content: '';
   background: url('../images/pattern.svg');
 }
 
@@ -176,7 +176,6 @@ a:hover {
 }
 
 .theme_dark .content__list li::before {
-  content: '';
   background: url('../images/marker-dark.svg') no-repeat center;
   background-size: 15px 15px;
 }
@@ -239,6 +238,7 @@ a:hover {
 
 .content__card-subtitle {
   text-align: center;
+  font-size: 18px;
 }
 
 .colored-text {
@@ -258,7 +258,6 @@ a:hover {
 }
 
 .theme_dark .colored-text::after{
-  content: '';
   background: url('../images/pattern.svg');
 }
 
